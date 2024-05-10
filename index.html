@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>9010 Motorsports</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline styles for demonstration purposes only */
+        p{
+            font-size:18px;
+
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates a three-column grid */
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-item {
+            text-align: center;
+        }
+        .service-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .service-description {
+            margin-top: 10px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from links */
+            
+            
+            
+        }
+        .button-container a {
+            padding: 10px 20px;
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Required for width and centering */
+        }
+        .button-container a:hover {
+            background-color: #0056b3;
+            animation: bounce 0.5s ease infinite; /* Add bounce animation */
+        }
+
+                @keyframes bounceAndRotate {
+            0%, 100% {
+                transform: translateY(0) scale(1) rotate(0deg);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+            25% {
+                transform: translateY(-20px) scale(1.05) rotate(-2deg);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                transform: translateY(-10px) scale(1.02) rotate(2deg);
+                box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+            }
+            75% {
+                transform: translateY(-15px) scale(1.03) rotate(-1deg);
+                box-shadow: 0 9px 19px rgba(0, 0, 0, 0.28);
+            }
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+            animation: bounceAndRotate 1s ease-in-out infinite;
+        }
+
+
+        
+        .contact-button:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
+        }
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+        /* Styles for the hamburger menu */
+        .mobile-menu-icon {
+            display: none; /* Initially hidden, shown in mobile view */
+            cursor: pointer;
+        }
+        .mobile-menu-icon .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #333;
+        }
+        @media screen and (max-width: 768px) {
+            .mobile-menu-icon {
+                display: block; /* Show the hamburger icon in mobile view */
+            }
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            .topnav.responsive {position: relative;}
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left; }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="IMG_6081.png" alt="Car Image">
+        </a>
+        <nav>
+            <!-- Hamburger menu icon for mobile view -->
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="schedule.html">Schedule/Contact Us</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="errorpage.html">Report Errors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="IMG_7377.png" alt="Car Image">
+        </div>
+        <div class="bookappointment-section">
+            <h1>Book an appointment with us!</h1>
+            <button type="button" class="button-container"><a href="https://myalp.io/tAILEl">Request Appointment</a></button>
+        </div> 
+        <div class="homepage-services">
+            <h1>Services</h1>
+            <p>Here are some of the recent projects and jobs that have recently been completed in the shop!</p>
+            <section class="grid">
+                <div class="service-item">
+                    <img src="interiorcleaning.png" alt="Interior Cleaning">
+                </div>
+                <div class="service-item">
+                    <img src="batterychange.png" alt="Battery Change">
+                    <!-- <div class="image-overlay">
+                        <p>Interior Cleaning</p>
+                    </div> -->
+                </div>
+                <div class="service-item">
+                    <img src="csfinstallation.png" alt="CSF Installation">
+                </div>
+            </section>
+        </div>
+        <div class="button-container">
+            <p>More Questions ?</p>
+
+            <a href="contact.html"class="contact-button">Contact Us</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="IMG_6081.png" alt="Company Logo" class="footer-logo">
+            <div class="footer-details">
+                <a href="tel:+3018215926">(301) 821-5926</a> 
+                <a href="https://maps.app.goo.gl/cKTceKpTR5JaeCt88" target="_blank">View on Maps</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+          var x = document.querySelector("nav ul");
+          if (x.className === "") {
+            x.className = "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

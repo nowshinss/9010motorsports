@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Contact</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  header {
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+header img {
+    max-height: 60px;
+    width: auto;
+    margin-right: 30px;
+}
+.form-container {
+    background-color: #111; /* Adjusted background color */
+    color: #ccd6f6; /* Light text color for contrast */
+    padding: 4rem;
+    text-align: center;
+  }
+  .form-field {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem; /* Spacing between fields */
+    border: none;
+    border-radius: 5px;
+  }
+  .submit-button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .submit-button:hover {
+    background-color: #fcd34d; /* Yellow color on hover */
+    border-color: #fcd34d;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <img src="IMG_6081.png" alt="Car Image">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="schedule.html">Schedule/Contact Us</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+        <li><a href="errorpage.html">Report Errors</a></li>
+      </ul>
+  </nav>
+</header>
+  <main>
+    <div class="container">
+        <form method="POST" action="https://getform.io/f/8b30bb26-1aa4-4c89-bfcf-1fff4b243c3c" class="form-container">
+            <div>
+                <p style="font-size: 50px; font-weight: bold; border-bottom: 4px solid rgb(177, 177, 74); color: rgb(255, 255, 255);">Contact Us</p>
+            </div>
+            <input class="form-field" type="text" placeholder="Name" name="name" />
+            <input class="form-field" type="email" placeholder="Email" name="email" />
+            <textarea class="form-field" name="message" rows="10" placeholder="Message"></textarea>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+  </main>
+  <footer>
+    <div class="footer-container">
+        <img src="IMG_6081.png" alt="Company Logo" class="footer-logo">
+        <div class="footer-details">
+          <a href="tel:+3018215926">(301) 821-5926</a> 
+          <a href="https://maps.app.goo.gl/cKTceKpTR5JaeCt88" target="_blank">View on Maps</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+  </footer>
+  </body>
+  </html>

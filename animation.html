@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirect Button</title>
+  <style type="text/css">
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background-color: #000000;
+      color: #333;       
+    }
+    .btn {
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      border: none;
+      width: 300px;
+      background: linear-gradient(to left, #301f27 50%, #313030 50%) right;
+      background-size: 200%;
+      transition: background-position 0.5s;
+      font-size: 18px;
+      text-decoration: none; 
+      display: inline-block; 
+      text-align: center; 
+    }
+    .btn:hover {
+      background-position: left;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:void(0);" class="btn" onclick="transitionToPage('index.html')">Are you ready to upgrade your car ?</a>
+  
+
+  <script>
+    function transitionToPage(url) {
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = url;
+      }, 500); 
+    }
+  </script>
+</body>
+</html>
